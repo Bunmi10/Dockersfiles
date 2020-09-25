@@ -33,5 +33,20 @@ sudo docker rm trio-task
 
 sudo docker rmi trio-task
 
+MySQL
+
+Vim into Docker
+FROM mysql:5:7
+
+ENV MYSQL_DATABASE=flask-db
+
+RUN pip install flask flask_sqlalchemy pymysql
+
+export FLASK_DB_PASSWORD=winter
+
+sudo docker run --env MYSQL_ROOT_PASSWORD=$flask_db -d -p 3306:3306 --name mysql
+
+
+
 
 
