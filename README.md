@@ -13,4 +13,25 @@ FROM python:3.7
 #copy  content of image
 COPY . .
 
-RUN
+#Run pip dependencies
+Run pip install flask
+
+#Expose the correct port
+EXPOSE 5000
+
+#create an entrypoint 
+ENTRYPOINT [ "python", "app.py"]
+
+
+Sudo docker build -t trio-task .
+
+Sudo docker run -d -p 5000: 5000 --trio-task trio-task
+
+sudo docker stop trio-task
+
+sudo docker rm trio-task
+
+sdo docker rmi trio-task
+
+
+
