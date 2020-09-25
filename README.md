@@ -46,6 +46,10 @@ export FLASK_DB_PASSWORD=winter
 
 sudo docker run --env MYSQL_ROOT_PASSWORD=$flask_db -d -p 3306:3306 --name mysql
 
+touch nginx .conf
+
+vim nginx .conf
+
 
 
 
