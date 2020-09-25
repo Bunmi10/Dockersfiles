@@ -31,7 +31,7 @@ sudo docker stop trio-task
 
 sudo docker rm trio-task
 
-sdo docker rmi trio-task
+sudo docker rmi trio-task
 
 
 
