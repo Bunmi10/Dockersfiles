@@ -50,6 +50,16 @@ touch nginx .conf
 
 vim nginx .conf
 
+events {}
+http {
+    server {
+        listen 80;
+        location / {
+            proxy_pass http://server:3306;
+        }
+    }
+}
+
 
 
 
