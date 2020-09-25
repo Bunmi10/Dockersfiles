@@ -55,7 +55,7 @@ http {
     server {
         listen 80;
         location / {
-            proxy_pass http://server:3306;
+            proxy_pass http://server:5000;
         }
     }
 }
